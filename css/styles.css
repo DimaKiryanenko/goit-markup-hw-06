@@ -492,14 +492,14 @@ textarea {
 }
 
 .form-checkbox {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   margin-top: 25px;
   margin-bottom: 0;
 }
 
 .checkbox-policy {
+  display: flex;
+  align-items: center;
+
   margin-left: 9px;
   margin-bottom: 0;
 
@@ -510,6 +510,41 @@ textarea {
   letter-spacing: 0.03em;
 
   color: #757575;
+}
+
+.checkbox-input {
+  /*-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;*/
+
+  position: relative;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  height: 15px;
+  width: 16px;
+  margin-right: 9px;
+
+  border: 1px solid #212121;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+.checkbox-input:checked + .checkbox-icon {
+  border-color: #2196f3;
+  background-color: #2196f3;
+  background-image: url("/image/iconcheck.svg");
+  background-size: contain;
+  background-origin: border-box;
 }
 
 .form-capital {

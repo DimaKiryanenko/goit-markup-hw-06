@@ -518,8 +518,8 @@ textarea {
   appearance: none;*/
 
   position: relative;
-  width: 1px;
-  height: 1px;
+  width: 0px;
+  height: 0px;
   margin: -1px;
   border: 0;
   padding: 0;
@@ -584,6 +584,7 @@ textarea {
 }
 
 .span {
+  margin-left: 3px;
   text-decoration: underline;
   color: #2196f3;
 }
@@ -919,7 +920,7 @@ footer {
 }
 
 .label-footer {
-  width: 360px;
+  width: 356px;
 
   font-family: Roboto;
   font-style: normal;
@@ -942,6 +943,8 @@ footer {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  background: #2f303a;
 }
 
 .iconsend-footer {
@@ -1010,6 +1013,9 @@ button {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons:focus,

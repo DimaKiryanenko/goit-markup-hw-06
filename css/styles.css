@@ -542,7 +542,7 @@ textarea {
 .checkbox-input:checked + .checkbox-icon {
   border-color: #2196f3;
   background-color: #2196f3;
-  background-image: url("/image/iconcheck.svg");
+  background-image: url("../image/iconcheck.svg");
   background-size: contain;
   background-origin: border-box;
 }
